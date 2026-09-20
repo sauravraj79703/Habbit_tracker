@@ -1,0 +1,58 @@
+.habit-form {
+  
+  margin: auto;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  height: 84%;
+  margin-bottom: 4.5rem;
+  
+}
+
+.habit-form h2 {
+  text-align: center;
+}
+
+.habit-form input,
+.habit-form select,
+.habit-form textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.habit-form .days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 10px 0;
+}
+
+.habit-form .days label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.habit-form .time-duration {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.habit-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3e8ed0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.habit-form button:hover {
+  background-color: #2f6faa;
+}

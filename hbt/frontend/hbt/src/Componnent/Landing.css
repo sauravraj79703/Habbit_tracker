@@ -1,0 +1,222 @@
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+/* --- Navbar --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 18%;
+  background: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+  z-index: 10;
+  border-right: 1px solid #e6e6e6;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #357edd;
+  margin-bottom: 3rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #357edd;
+  transform: translateX(5px);
+}
+
+/* --- Login Button --- */
+.btn {
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
+  z-index: 20;
+}
+
+#login-btn {
+  background-color: #357edd;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#login-btn:hover {
+  background-color: #285bb5;
+  transform: scale(1.05);
+}
+
+/* --- Add Habit Card --- */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  min-height: 80vh;
+}
+
+.add-new-habit {
+  text-align: center;
+  border: 2px dashed #d0d0d0;
+  border-radius: 12px;
+  padding: 40px;
+  width: 320px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.add-new-habit:hover {
+  border-color: #357edd;
+  transform: scale(1.03);
+}
+
+.plus {
+  font-size: 3rem;
+  color: #357edd;
+  margin-bottom: 1rem;
+}
+
+/* --- Habit Display Section --- */
+.showhabit {
+  margin-left: 20%;
+  background-color: #f5f6fa;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.show-header {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #357edd;
+  margin-bottom: 2rem;
+}
+
+/* --- Habit Card --- */
+.habit-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+/* --- About Section --- */
+.about {
+  margin-left: 20%;
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  text-align: center;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #357edd;
+  margin-bottom: 1.5rem;
+}
+
+.para-container {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #444;
+  background-color: #f8f9fb;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* --- Dashboard (Calendar Section) --- */
+#Dashboard {
+  margin-left: 20%;
+  background-color: #f5f6fa;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 90vh;
+}
+
+#Dashboard h2 {
+  color: #357edd;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  width: 700px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.calendar h4 {
+  color: #285bb5;
+  margin-bottom: 1rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+
+  .btn {
+    right: 1rem;
+  }
+
+  .showhabit, .about, #Dashboard {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+
+  .sidebar {
+    width: 90%;
+  }
+}
